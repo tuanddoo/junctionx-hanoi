@@ -1,0 +1,26 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import '../../stylesheets/variables';
+
+.block {
+  background: $bp-gray;
+  color: $bp-white;
+}
+
+.linkRow{
+  margin-top: 40px;
+}
+.linkButton{
+  border: 2px solid;
+  border-color: $brandcolor2;
+  color: $brandcolor2;
+  padding: 5px;
+  margin: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.link {
+  display:inline-block;
+  width:100%;
+  height:100%;
+}

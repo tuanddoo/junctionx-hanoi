@@ -1,0 +1,39 @@
+@import '../../stylesheets/variables';
+
+.text_highlight {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.h {
+  font-weight: normal;
+  line-height: 1.3;
+}
+
+.img {
+  max-width: 100%;
+}
+.linkButton{
+  border: 2px solid;
+  border-color: $brandcolor2;
+  color: $brandcolor2;
+  padding: 5px;
+  margin: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.linkButton:hover{
+  background-color: $brandcolor2;
+  color: black;
+}
+
+.link {
+  color: $brandcolor2;
+  text-decoration: none;
+  display:inline-block;
+}
+.link:hover {
+  color:black;
+}

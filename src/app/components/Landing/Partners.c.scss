@@ -1,0 +1,14 @@
+@import '../../stylesheets/variables';
+
+
+.all_partners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.imgPartner {
+  max-width: 100%;
+  max-height: 100%;
+}

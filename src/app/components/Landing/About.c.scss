@@ -1,0 +1,23 @@
+@import '../../stylesheets/variables';
+
+.block {
+  background: $bp-white;
+  color: $bp-black;
+}
+
+.youtubeEmbed {
+  height: 100%;
+  width: 100%;
+  min-height: 300px;
+  @media only screen and (max-width: 600px) {
+    min-height: 100%;
+  }
+}
+
+.embedContainer {
+  margin: auto;
+}
+
+.linkRow{
+  margin-top: 40px;
+}

@@ -1,0 +1,155 @@
+@import '../stylesheets/variables';
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px !important;
+  cursor: pointer;
+}
+a:link {
+  color: $bp-black;
+  text-decoration: none;
+}
+a:visited {
+  color: $bp-black;
+  text-decoration: none;
+}
+a:hover {
+  color: $bp-cyan;
+  text-decoration: none;
+}
+a:active {
+  color: $bp-cyan;
+  text-decoration: none;
+}
+
+.header,
+.site_nav ul {
+  display: flex;
+  flex-direction: column;
+  padding-right: 120px;
+  @media only screen and (max-width: 900px) {
+    padding-right: 20px;
+    margin-right: 0px;
+  }
+}
+
+.header_wrapper {
+  padding: 0em 2em;
+  background-color: $bp-white;
+  // if sticky
+  // @media only screen and (min-width: 900.02px) {
+  //   position: fixed;
+  //   top: 0;
+  //   width: 100%
+  // }
+}
+
+.header {
+  max-width: 100vw;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.junction_logo {
+  width: 200px;
+  padding-top: 5%;
+}
+
+.site_nav {
+  @media only screen and (max-width: 900px) {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 50px;
+  }
+
+  a {
+    display: block;
+    padding: 0.7em;
+    text-align: center;
+    color: $bp-black !important;
+    font-size: 1.2em;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+    letter-spacing: 3px;
+    &:hover {
+      color: $bp-cyan !important;
+    }
+    &:active {
+      color: $bp-cyan !important;
+      text-decoration: none;
+    }
+  }
+  li {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  header{
+    padding-right: 0 !important;
+  }
+  .site_nav ul {
+    flex-direction: row;
+    justify-content: center;
+    a {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  header{
+    padding-right: 0 !important;
+  }
+  .site_nav ul {
+    flex-direction: row;
+    justify-content: center;
+    a {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 900.2px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo {
+    margin-bottom: 0;
+  }
+  .site_nav {
+    margin-left: auto;
+  }
+}
+
+.mlh {
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    display: none;
+  }
+  display: block;
+  max-width: 100px;
+  min-width: 60px;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  width: 10%;
+  img {
+    width: 100%;
+  }
+}

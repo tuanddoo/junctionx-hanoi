@@ -1,0 +1,84 @@
+@import '../../stylesheets/variables';
+
+.button {
+    padding: 10px 20px;
+    position: relative;
+    margin: 0 auto;
+    font-weight: 600;
+    @media only screen and (max-width: 450px) {
+        display: flex;
+        justify-content: center;        
+    }
+}
+
+.button:after {
+    border: 2px solid $bp-cyan;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: -3px;
+    bottom: -3px;
+    pointer-events: none;
+    transition: 0.3s ease-out;
+}
+
+.button:hover:after {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, $bp-magenta 0%, $bp-cyan 100%);
+    border-image-slice: 1;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    pointer-events: none;
+}
+
+.button:before {
+    border: 2px solid $bp-magenta;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: 3px;
+    bottom: 3px;
+    pointer-events: none;
+    transition: 0.3s ease-out;
+}
+
+.button:hover:before {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, $bp-magenta 0%, $bp-cyan 100%);
+    border-image-slice: 1;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    pointer-events: none;
+}
+
+
+.button:hover{
+    color: black !important;
+}
+
+.buttonLight {
+    color: $bp-white !important;
+    &:hover {
+        color: $bp-white !important;
+    }
+}
+
+@media (max-width: 1023.98px) {
+    .column:first-child {
+        margin-bottom: 15px;
+    }
+}

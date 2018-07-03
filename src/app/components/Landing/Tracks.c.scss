@@ -1,0 +1,86 @@
+@import '../../stylesheets/variables';
+
+.track_row {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.text_highlight {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.imgTrack {
+  position: relative;
+  max-width: 100%;
+  background-position: center !important;
+  background-size: cover !important;
+  max-height: 200px;
+  min-height: 200px;
+  margin-bottom: 16px;
+}
+
+.trackDivs {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.transpr {
+  background-color: rgba(0,0,0,0.5);
+  height: 200px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  display: flex;
+  align-items: center;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
+.transpr:hover {
+  background-color: rgba(0, 0, 0,0.3);
+}
+
+.title1 {
+  //padding: 150px 100px;
+  margin: auto;
+  vertical-align: middle;
+  align: center;
+  line-height: 1;
+  max-width: 80%;
+  color: $brandcolor2;
+  text-decoration: none;
+  display:inline-block;
+}
+.link {
+  text-decoration: none;
+}
+
+/*.title {
+  //padding: 150px 100px;
+  margin: auto;
+  vertical-align: middle;
+  font-size: 4vw;
+  align: center;
+  line-height: 1;
+  max-width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 6vw;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .title {
+        font-size: 3vw;
+    }
+}*/
+
+.centertext {
+  position: relative;
+  min-height: 100px;
+
+}

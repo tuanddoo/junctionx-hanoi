@@ -1,0 +1,35 @@
+@import '../../stylesheets/variables';
+
+.block {
+  padding: 10px 0;
+  background: $bp-black;
+  color: $bp-white;
+}
+
+.block {
+  a:link {
+    color: #35e2df;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #35e2df;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #35e2df;
+    text-decoration: none;
+  }
+}
+
+.logoTitle {
+  font-size: 22px !important;
+  margin: 20px;
+  @media (max-width: 360px) {
+    display: block;
+  }
+}
+
+.picture{
+  width: 20px;
+  height: 20px;
+}
